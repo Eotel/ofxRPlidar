@@ -1,0 +1,1044 @@
+{
+	"archiveVersion": "1",
+	"classes": {},
+	"objectVersion": "54",
+	"objects": {
+		"00F82355-87CE-4A5C-9F7E-AA7ED55AF04A": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "dataupacker_namespace.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker/dataupacker_namespace.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"039081F5-207C-47AE-BBCB-0F22D7215A3F": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_crc.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/include/sl_crc.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"03D65931-127F-471C-BC7C-EA5650F2ABA7": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "rplidar_driver_serial.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/rplidar_driver_serial.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"0449CB52-90BA-4B73-BD16-F3CF579F0ADB": {
+			"fileRef": "CEC0C4DB-2674-457F-A97C-8F0B86466A0B",
+			"isa": "PBXBuildFile"
+		},
+		"090ABFA2-3010-4550-B7A0-2C545047D681": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "locker.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/hal/locker.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"09DD53F1-ED83-482D-A52D-2910ECC506FF": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "handler_hqnode.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker/unpacker/handler_hqnode.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"0A38AC67-9C05-448A-A1C5-B4527044E91B": {
+			"children": [
+				"70762F03-3D83-4162-B6BB-0B68E49542B2",
+				"A3788D8F-4D37-4F28-BACE-FF7B3280FC43",
+				"54B252EF-E355-4328-89E2-11E5D022EB87",
+				"C53ED963-5DBB-4EF9-89DB-B8667DFFAFAD",
+				"C98E1CE2-5A23-4E5C-B8D5-FC3E8DA86FFF",
+				"039081F5-207C-47AE-BBCB-0F22D7215A3F",
+				"495333C9-874B-493D-B99B-FC102E56A29F",
+				"2D450BB8-B7C9-427F-9B56-1A6FAEB8B0A5",
+				"12CC77B5-ED12-41AF-BA34-27EC318C8503",
+				"C34790B0-7D83-48EF-A65B-1DD7E54CCD0C",
+				"BF09A3EE-B69B-47E9-88A6-1DAFAC5CF4CB",
+				"242C787C-4D0B-47DD-AB01-F92A7DDCFA19"
+			],
+			"isa": "PBXGroup",
+			"name": "include",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/include",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"0D9173EA-3DBE-4120-BFFC-A67C9852AE92": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "dataunpacker.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker/dataunpacker.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"0E4AF9D2-B7BF-4724-B858-33019FA8D5B7": {
+			"fileRef": "09DD53F1-ED83-482D-A52D-2910ECC506FF",
+			"isa": "PBXBuildFile"
+		},
+		"0E9898C8-87B1-4DA8-B109-2BA3237B6AA5": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "net_serial.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/arch/macOS/net_serial.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"0ED3CF91-D556-4F83-BD52-803044479D9E": {
+			"children": [
+				"A2EE17E0-13D7-4890-BF5B-00EF8D88154D",
+				"FB65696B-267B-4F38-9602-1DD19DD2C4BB"
+			],
+			"isa": "PBXGroup",
+			"name": "libs",
+			"path": "../../../addons/ofxRPlidar/libs",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"10419D76-F263-4972-93D7-077111B8CC57": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "handler_capsules.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker/unpacker/handler_capsules.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"11698024-2739-49D3-B3B1-B3F64760D1B0": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_async_transceiver.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/sl_async_transceiver.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"12CC77B5-ED12-41AF-BA34-27EC318C8503": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_lidar_driver.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/include/sl_lidar_driver.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"18A53E6B-DD83-4589-AB92-1CCAEE8B0C38": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "handler_normalnode.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker/unpacker/handler_normalnode.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"191CD6FA2847E21E0085CBB6": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.plist.entitlements",
+			"path": "of.entitlements",
+			"sourceTree": "<group>"
+		},
+		"191EF70929D778A400F35F26": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "folder",
+			"name": "openFrameworks",
+			"path": "../../../libs/openFrameworks",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"19B789C429E5AB4A0082E9B8": {
+			"buildActionMask": "2147483647",
+			"files": [],
+			"inputFileListPaths": [],
+			"inputPaths": [],
+			"isa": "PBXShellScriptBuildPhase",
+			"outputFileListPaths": [],
+			"outputPaths": [],
+			"runOnlyForDeploymentPostprocessing": "0",
+			"shellPath": "/bin/sh",
+			"shellScript": "\"$OF_PATH/scripts/osx/xcode_project.sh\"\n",
+			"showEnvVarsInLog": "0"
+		},
+		"1B0C7C28-8AD1-4A46-8B8C-6FDDD1183B64": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "socket.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/hal/socket.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"221A9F4A-6EEB-4B57-9506-97D14EF3260B": {
+			"children": [
+				"691B93F2-07FA-4173-979F-7518529E836E",
+				"BEBEE83A-93D3-467D-AB75-33019B4EBE0C",
+				"0D9173EA-3DBE-4120-BFFC-A67C9852AE92",
+				"3324169C-845F-423E-9D14-74865BDAD5EE",
+				"00F82355-87CE-4A5C-9F7E-AA7ED55AF04A",
+				"CD4FCE6B-5922-4248-80AE-7818F080E409"
+			],
+			"isa": "PBXGroup",
+			"name": "dataunpacker",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"242C787C-4D0B-47DD-AB01-F92A7DDCFA19": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_types.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/include/sl_types.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"26A9DFC4-E1B7-4808-BE0B-E1E9F6828649": {
+			"children": [
+				"A23203ED-0BAA-416D-A914-7AEDAE32BB5C",
+				"CEC0C4DB-2674-457F-A97C-8F0B86466A0B",
+				"0E9898C8-87B1-4DA8-B109-2BA3237B6AA5",
+				"4704B1FA-D438-4A36-8FAD-AEFCB00E9D96",
+				"D36F06F7-3AED-452E-9088-D6B48661DCF9",
+				"5A07E721-2166-4B26-B4BA-D72E33115C40",
+				"483A7E6C-0EFC-48F1-BE36-174AFDE04615"
+			],
+			"isa": "PBXGroup",
+			"name": "macOS",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/arch/macOS",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2A2C11AD-373F-4F88-A4E8-E3989416CB3F": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxRPlidar.cpp",
+			"path": "../../../addons/ofxRPlidar/src/ofxRPlidar.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2CAEC3D8-4E84-4BB2-9660-AE1B0872D3BC": {
+			"children": [
+				"94C2F0F6-22F7-4D82-BEB1-827BEFC6F28F",
+				"EA22E55A-7CB3-4CD0-A7DF-1F9F18C2232C",
+				"698266D0-9EF1-45B3-9C08-858C81EFD5F3",
+				"7EF72DE8-5B5B-4876-BB91-E1496C7EBD68",
+				"40BD9DC0-D1E2-4BCE-95C6-A45B57B23C9C",
+				"090ABFA2-3010-4550-B7A0-2C545047D681",
+				"1B0C7C28-8AD1-4A46-8B8C-6FDDD1183B64",
+				"5D9EF04D-E636-4C8D-9E9C-C5D50B91272D",
+				"3164869A-1BF9-4F4B-A011-28AC95CDC109",
+				"FE2D906B-31E6-40B6-8216-D1444A149C65",
+				"BF254552-BEE5-4FC9-9DB4-908345BF02B4",
+				"E931955C-7593-47EA-8F50-E464766FDCF3"
+			],
+			"isa": "PBXGroup",
+			"name": "hal",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/hal",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2D145455-EA18-4E50-A4B6-FD9FA9F88176": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_async_transceiver.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/sl_async_transceiver.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2D450BB8-B7C9-427F-9B56-1A6FAEB8B0A5": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_lidar_cmd.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/include/sl_lidar_cmd.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"311A1041-6559-4DA3-97DE-895DB1BD1361": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "handler_capsules.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker/unpacker/handler_capsules.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"3164869A-1BF9-4F4B-A011-28AC95CDC109": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "thread.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/hal/thread.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"3324169C-845F-423E-9D14-74865BDAD5EE": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "dataunpacker.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker/dataunpacker.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"383F1018-5906-4BFC-8682-3B8D904AEE7B": {
+			"children": [
+				"2A2C11AD-373F-4F88-A4E8-E3989416CB3F",
+				"AB1A15DD-0AF8-4F85-A10A-251840815434"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "../../../addons/ofxRPlidar/src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"39857EDB-D5C8-42B0-8A94-E65CAC3A0865": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "rplidar_driver_impl.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/rplidar_driver_impl.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"40BD9DC0-D1E2-4BCE-95C6-A45B57B23C9C": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "event.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/hal/event.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"45834F01-6EDC-434A-A498-2BC1349B06AE": {
+			"fileRef": "7B5FE22E-2187-4EF1-8832-7E275E7715A3",
+			"isa": "PBXBuildFile"
+		},
+		"4704B1FA-D438-4A36-8FAD-AEFCB00E9D96": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "net_socket.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/arch/macOS/net_socket.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"483A7E6C-0EFC-48F1-BE36-174AFDE04615": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "timer.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/arch/macOS/timer.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"495333C9-874B-493D-B99B-FC102E56A29F": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_lidar.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/include/sl_lidar.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"504342C5-88B0-4B87-AC1F-E7176267D936": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "rplidar_driver_TCP.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/rplidar_driver_TCP.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"51CED03A-7C72-4FB1-BB21-B5E5201F7E34": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "DoubleBuffer.h",
+			"path": "../../../addons/ofxRPlidar/libs/utils/DoubleBuffer.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"54B252EF-E355-4328-89E2-11E5D022EB87": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "rplidar_driver.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/include/rplidar_driver.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"58DD6A24-AC20-4BB1-97A6-3463246D19ED": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_lidarprotocol_codec.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/sl_lidarprotocol_codec.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"5A07E721-2166-4B26-B4BA-D72E33115C40": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "timer.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/arch/macOS/timer.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"5D9EF04D-E636-4C8D-9E9C-C5D50B91272D": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "thread.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/hal/thread.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"5E6902FB-9A58-4A78-934F-F2E7263B84DF": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_serial_channel.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/sl_serial_channel.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"691B93F2-07FA-4173-979F-7518529E836E": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "dataunnpacker_commondef.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker/dataunnpacker_commondef.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"698266D0-9EF1-45B3-9C08-858C81EFD5F3": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "byteops.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/hal/byteops.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"70762F03-3D83-4162-B6BB-0B68E49542B2": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "rplidar.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/include/rplidar.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"7B5FE22E-2187-4EF1-8832-7E275E7715A3": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_crc.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/sl_crc.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"7EF72DE8-5B5B-4876-BB91-E1496C7EBD68": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "byteorder.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/hal/byteorder.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"82C75BEA-783A-4468-B933-56AA70E15A9C": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sdkcommon.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/sdkcommon.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"8D027078-B135-40E5-B788-95BA81F00ACE": {
+			"fileRef": "9318AD8C-C356-4BC8-BB0B-8CEC515AB0FB",
+			"isa": "PBXBuildFile"
+		},
+		"906DF45D-2B7F-47E7-85B7-EC1540482610": {
+			"fileRef": "5D9EF04D-E636-4C8D-9E9C-C5D50B91272D",
+			"isa": "PBXBuildFile"
+		},
+		"9318AD8C-C356-4BC8-BB0B-8CEC515AB0FB": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_lidar_driver.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/sl_lidar_driver.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"94C2F0F6-22F7-4D82-BEB1-827BEFC6F28F": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "abs_rxtx.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/hal/abs_rxtx.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"95CBB60D-61F6-442D-96D9-6E81C56316C8": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_lidarprotocol_codec.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/sl_lidarprotocol_codec.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"98AD3BC9-F778-4FD3-A204-5122AC5C96FA": {
+			"fileRef": "0D9173EA-3DBE-4120-BFFC-A67C9852AE92",
+			"isa": "PBXBuildFile"
+		},
+		"9CF8E608-7A57-46CF-AB5D-4C360BE0EDCE": {
+			"fileRef": "11698024-2739-49D3-B3B1-B3F64760D1B0",
+			"isa": "PBXBuildFile"
+		},
+		"A1DCA3B2-4C5F-414E-8C00-41E4956B37C7": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "rplidar_driver.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/rplidar_driver.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"A23203ED-0BAA-416D-A914-7AEDAE32BB5C": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "arch_macOS.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/arch/macOS/arch_macOS.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"A2EE17E0-13D7-4890-BF5B-00EF8D88154D": {
+			"children": [
+				"0A38AC67-9C05-448A-A1C5-B4527044E91B",
+				"DC58357A-36E7-45DD-9733-C418CBEE8832"
+			],
+			"isa": "PBXGroup",
+			"name": "rplidar",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"A3788D8F-4D37-4F28-BACE-FF7B3280FC43": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "rplidar_cmd.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/include/rplidar_cmd.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"A9AFC2A6-2AAB-4C20-89F4-1E775D13FA47": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_tcp_channel.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/sl_tcp_channel.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"A9BB2BCF-19B4-4BDD-8C8F-DA699E091773": {
+			"fileRef": "4704B1FA-D438-4A36-8FAD-AEFCB00E9D96",
+			"isa": "PBXBuildFile"
+		},
+		"AB1A15DD-0AF8-4F85-A10A-251840815434": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxRPlidar.h",
+			"path": "../../../addons/ofxRPlidar/src/ofxRPlidar.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"BB4B014C10F69532006C3DED": {
+			"children": [
+				"CB258976-002D-4F69-A44F-A601371F8927"
+			],
+			"isa": "PBXGroup",
+			"name": "addons",
+			"path": "../../../addons",
+			"sourceTree": "<group>"
+		},
+		"BDCB6A08-3723-4331-9B43-49C8035DB3D4": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_udp_channel.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/sl_udp_channel.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"BEBEE83A-93D3-467D-AB75-33019B4EBE0C": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "dataunnpacker_internal.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker/dataunnpacker_internal.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"BF09A3EE-B69B-47E9-88A6-1DAFAC5CF4CB": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_lidar_protocol.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/include/sl_lidar_protocol.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"BF254552-BEE5-4FC9-9DB4-908345BF02B4": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "util.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/hal/util.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C00D5B4D-2E29-41F2-8778-08827B115665": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "handler_normalnode.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker/unpacker/handler_normalnode.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C34790B0-7D83-48EF-A65B-1DD7E54CCD0C": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "sl_lidar_driver_impl.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/include/sl_lidar_driver_impl.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C4ECF69A-4719-4F84-85B1-6E88E05610E9": {
+			"fileRef": "BDCB6A08-3723-4331-9B43-49C8035DB3D4",
+			"isa": "PBXBuildFile"
+		},
+		"C53ED963-5DBB-4EF9-89DB-B8667DFFAFAD": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "rplidar_protocol.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/include/rplidar_protocol.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C67A8CFD-0130-4BBA-9E10-74D49D5C3EC2": {
+			"fileRef": "2A2C11AD-373F-4F88-A4E8-E3989416CB3F",
+			"isa": "PBXBuildFile"
+		},
+		"C78E87EE-8950-400F-B987-94A9FE16C70D": {
+			"fileRef": "A9AFC2A6-2AAB-4C20-89F4-1E775D13FA47",
+			"isa": "PBXBuildFile"
+		},
+		"C98E1CE2-5A23-4E5C-B8D5-FC3E8DA86FFF": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "rptypes.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/include/rptypes.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"CB258976-002D-4F69-A44F-A601371F8927": {
+			"children": [
+				"0ED3CF91-D556-4F83-BD52-803044479D9E",
+				"383F1018-5906-4BFC-8682-3B8D904AEE7B"
+			],
+			"isa": "PBXGroup",
+			"name": "ofxRPlidar",
+			"path": "../../../addons/ofxRPlidar",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"CD4FCE6B-5922-4248-80AE-7818F080E409": {
+			"children": [
+				"311A1041-6559-4DA3-97DE-895DB1BD1361",
+				"10419D76-F263-4972-93D7-077111B8CC57",
+				"09DD53F1-ED83-482D-A52D-2910ECC506FF",
+				"E6157863-ED70-415C-A551-FA225CB36213",
+				"C00D5B4D-2E29-41F2-8778-08827B115665",
+				"18A53E6B-DD83-4589-AB92-1CCAEE8B0C38"
+			],
+			"isa": "PBXGroup",
+			"name": "unpacker",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker/unpacker",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"CEC0C4DB-2674-457F-A97C-8F0B86466A0B": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "net_serial.cpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/arch/macOS/net_serial.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"CEFEA6E6-EE9F-4DF9-92A2-1DE6CC5AF695": {
+			"fileRef": "5E6902FB-9A58-4A78-934F-F2E7263B84DF",
+			"isa": "PBXBuildFile"
+		},
+		"D28B19F3-95B4-4EB2-B8A6-2D704830B673": {
+			"fileRef": "A1DCA3B2-4C5F-414E-8C00-41E4956B37C7",
+			"isa": "PBXBuildFile"
+		},
+		"D36F06F7-3AED-452E-9088-D6B48661DCF9": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "thread.hpp",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/arch/macOS/thread.hpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"D7A492F7-130B-458C-AD02-586A6B797DB7": {
+			"children": [
+				"26A9DFC4-E1B7-4808-BE0B-E1E9F6828649"
+			],
+			"isa": "PBXGroup",
+			"name": "arch",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/arch",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"D7CBAF1B-366F-4D68-85C5-057624C812A7": {
+			"fileRef": "C00D5B4D-2E29-41F2-8778-08827B115665",
+			"isa": "PBXBuildFile"
+		},
+		"DC58357A-36E7-45DD-9733-C418CBEE8832": {
+			"children": [
+				"D7A492F7-130B-458C-AD02-586A6B797DB7",
+				"221A9F4A-6EEB-4B57-9506-97D14EF3260B",
+				"2CAEC3D8-4E84-4BB2-9660-AE1B0872D3BC",
+				"A1DCA3B2-4C5F-414E-8C00-41E4956B37C7",
+				"504342C5-88B0-4B87-AC1F-E7176267D936",
+				"39857EDB-D5C8-42B0-8A94-E65CAC3A0865",
+				"03D65931-127F-471C-BC7C-EA5650F2ABA7",
+				"82C75BEA-783A-4468-B933-56AA70E15A9C",
+				"11698024-2739-49D3-B3B1-B3F64760D1B0",
+				"2D145455-EA18-4E50-A4B6-FD9FA9F88176",
+				"7B5FE22E-2187-4EF1-8832-7E275E7715A3",
+				"9318AD8C-C356-4BC8-BB0B-8CEC515AB0FB",
+				"58DD6A24-AC20-4BB1-97A6-3463246D19ED",
+				"95CBB60D-61F6-442D-96D9-6E81C56316C8",
+				"5E6902FB-9A58-4A78-934F-F2E7263B84DF",
+				"A9AFC2A6-2AAB-4C20-89F4-1E775D13FA47",
+				"BDCB6A08-3723-4331-9B43-49C8035DB3D4"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"DDAEC63C-8464-4440-AFED-DB7A2FEE0DB7": {
+			"fileRef": "58DD6A24-AC20-4BB1-97A6-3463246D19ED",
+			"isa": "PBXBuildFile"
+		},
+		"E42962A92163ECCD00A6A9E2": {
+			"alwaysOutOfDate": "1",
+			"buildActionMask": "2147483647",
+			"files": [],
+			"inputPaths": [],
+			"isa": "PBXShellScriptBuildPhase",
+			"name": "Run Script — Compile OF",
+			"outputPaths": [],
+			"runOnlyForDeploymentPostprocessing": "0",
+			"shellPath": "/bin/sh",
+			"shellScript": "echo \"💾 Compiling Openframeworks\"\nxcodebuild -project \"$OF_PATH/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj\" -target openFrameworks -configuration \"${CONFIGURATION}\"  CLANG_CXX_LANGUAGE_STANDARD=$CLANG_CXX_LANGUAGE_STANDARD MACOSX_DEPLOYMENT_TARGET=$MACOSX_DEPLOYMENT_TARGET GCC_PREPROCESSOR_DEFINITIONS=$USER_PREPROCESSOR_DEFINITIONS\n",
+			"showEnvVarsInLog": "0"
+		},
+		"E4A5B60F29BAAAE400C2D356": {
+			"buildActionMask": "2147483647",
+			"dstPath": "",
+			"dstSubfolderSpec": "6",
+			"files": [],
+			"isa": "PBXCopyFilesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B4A0A3A1720003C02F2": {
+			"children": [
+				"191CD6FA2847E21E0085CBB6",
+				"E4B6FCAD0C3E899E008CF71C",
+				"E4EB6923138AFD0F00A09F29",
+				"E4B69E1C0A3A1BDC003C02F2",
+				"191EF70929D778A400F35F26",
+				"BB4B014C10F69532006C3DED",
+				"E4B69B5B0A3A1756003C02F2"
+			],
+			"isa": "PBXGroup",
+			"sourceTree": "<group>"
+		},
+		"E4B69B4C0A3A1720003C02F2": {
+			"attributes": {
+				"LastUpgradeCheck": "0600"
+			},
+			"buildConfigurationList": "E4B69B4D0A3A1720003C02F2",
+			"compatibilityVersion": "Xcode 3.2",
+			"developmentRegion": "en",
+			"hasScannedForEncodings": "0",
+			"isa": "PBXProject",
+			"knownRegions": [
+				"en",
+				"Base"
+			],
+			"mainGroup": "E4B69B4A0A3A1720003C02F2",
+			"productRefGroup": "E4B69B4A0A3A1720003C02F2",
+			"projectDirPath": "",
+			"projectRoot": "",
+			"targets": [
+				"E4B69B5A0A3A1756003C02F2"
+			]
+		},
+		"E4B69B4D0A3A1720003C02F2": {
+			"buildConfigurations": [
+				"E4B69B4E0A3A1720003C02F2",
+				"E4B69B4F0A3A1720003C02F2"
+			],
+			"defaultConfigurationIsVisible": "0",
+			"defaultConfigurationName": "Release",
+			"isa": "XCConfigurationList"
+		},
+		"E4B69B4E0A3A1720003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"CODE_SIGN_ENTITLEMENTS": "of.entitlements",
+				"COPY_PHASE_STRIP": "NO",
+				"ENABLE_TESTABILITY": "YES",
+				"GCC_OPTIMIZATION_LEVEL": "0",
+				"GCC_WARN_UNUSED_VARIABLE": "NO",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src"
+				],
+				"OTHER_CPLUSPLUSFLAGS": "-D__MACOSX_CORE__"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Debug"
+		},
+		"E4B69B4F0A3A1720003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"CODE_SIGN_ENTITLEMENTS": "of.entitlements",
+				"COPY_PHASE_STRIP": "YES",
+				"GCC_OPTIMIZATION_LEVEL": "3",
+				"GCC_UNROLL_LOOPS": "YES",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src"
+				],
+				"OTHER_CPLUSPLUSFLAGS": "-D__MACOSX_CORE__"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Release"
+		},
+		"E4B69B580A3A1756003C02F2": {
+			"buildActionMask": "2147483647",
+			"files": [
+				"E4B69E200A3A1BDC003C02F2",
+				"E4B69E210A3A1BDC003C02F2",
+				"0449CB52-90BA-4B73-BD16-F3CF579F0ADB",
+				"A9BB2BCF-19B4-4BDD-8C8F-DA699E091773",
+				"EB8A3A43-7939-4D77-820C-457EE2FCFE21",
+				"98AD3BC9-F778-4FD3-A204-5122AC5C96FA",
+				"EBBBB725-B0AF-4608-8D0B-B75585EA93B7",
+				"0E4AF9D2-B7BF-4724-B858-33019FA8D5B7",
+				"D7CBAF1B-366F-4D68-85C5-057624C812A7",
+				"906DF45D-2B7F-47E7-85B7-EC1540482610",
+				"D28B19F3-95B4-4EB2-B8A6-2D704830B673",
+				"9CF8E608-7A57-46CF-AB5D-4C360BE0EDCE",
+				"45834F01-6EDC-434A-A498-2BC1349B06AE",
+				"8D027078-B135-40E5-B788-95BA81F00ACE",
+				"DDAEC63C-8464-4440-AFED-DB7A2FEE0DB7",
+				"CEFEA6E6-EE9F-4DF9-92A2-1DE6CC5AF695",
+				"C78E87EE-8950-400F-B987-94A9FE16C70D",
+				"C4ECF69A-4719-4F84-85B1-6E88E05610E9",
+				"C67A8CFD-0130-4BBA-9E10-74D49D5C3EC2"
+			],
+			"isa": "PBXSourcesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B590A3A1756003C02F2": {
+			"buildActionMask": "2147483647",
+			"files": [],
+			"isa": "PBXFrameworksBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B5A0A3A1756003C02F2": {
+			"buildConfigurationList": "E4B69B5F0A3A1757003C02F2",
+			"buildPhases": [
+				"E42962A92163ECCD00A6A9E2",
+				"E4B69B580A3A1756003C02F2",
+				"E4B69B590A3A1756003C02F2",
+				"E4C2427710CC5ABF004149E2",
+				"E4A5B60F29BAAAE400C2D356",
+				"19B789C429E5AB4A0082E9B8"
+			],
+			"buildRules": [],
+			"dependencies": [],
+			"isa": "PBXNativeTarget",
+			"name": "example",
+			"productName": "myOFApp",
+			"productReference": "E4B69B5B0A3A1756003C02F2",
+			"productType": "com.apple.product-type.application"
+		},
+		"E4B69B5B0A3A1756003C02F2": {
+			"explicitFileType": "wrapper.application",
+			"includeInIndex": "0",
+			"isa": "PBXFileReference",
+			"path": "exampleDebug.app",
+			"sourceTree": "BUILT_PRODUCTS_DIR"
+		},
+		"E4B69B5F0A3A1757003C02F2": {
+			"buildConfigurations": [
+				"E4B69B600A3A1757003C02F2",
+				"E4B69B610A3A1757003C02F2"
+			],
+			"defaultConfigurationIsVisible": "0",
+			"defaultConfigurationName": "Release",
+			"isa": "XCConfigurationList"
+		},
+		"E4B69B600A3A1757003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"ARCHS": "$(ARCHS_STANDARD)",
+				"COPY_PHASE_STRIP": "NO",
+				"FRAMEWORK_SEARCH_PATHS": "$(inherited)",
+				"GCC_DYNAMIC_NO_PIC": "NO",
+				"GCC_PREPROCESSOR_DEFINITIONS": [
+					"_MACOS"
+				],
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src",
+					"src",
+					"../../../addons/ofxRPlidar/libs",
+					"../../../addons/ofxRPlidar/libs/rplidar",
+					"../../../addons/ofxRPlidar/libs/rplidar/include",
+					"../../../addons/ofxRPlidar/libs/rplidar/src",
+					"../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker",
+					"../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker/unpacker",
+					"../../../addons/ofxRPlidar/libs/utils",
+					"../../../addons/ofxRPlidar/src"
+				],
+				"LIBRARY_SEARCH_PATHS": "$(inherited)",
+				"OTHER_LDFLAGS": [
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF_DEBUG)"
+				]
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Debug"
+		},
+		"E4B69B610A3A1757003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"ARCHS": "$(ARCHS_STANDARD)",
+				"COPY_PHASE_STRIP": "YES",
+				"FRAMEWORK_SEARCH_PATHS": "$(inherited)",
+				"GCC_PREPROCESSOR_DEFINITIONS": [
+					"_MACOS"
+				],
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src",
+					"src",
+					"../../../addons/ofxRPlidar/libs",
+					"../../../addons/ofxRPlidar/libs/rplidar",
+					"../../../addons/ofxRPlidar/libs/rplidar/include",
+					"../../../addons/ofxRPlidar/libs/rplidar/src",
+					"../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker",
+					"../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker/unpacker",
+					"../../../addons/ofxRPlidar/libs/utils",
+					"../../../addons/ofxRPlidar/src"
+				],
+				"LIBRARY_SEARCH_PATHS": "$(inherited)",
+				"OTHER_LDFLAGS": [
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF)"
+				],
+				"baseConfigurationReference": "E4EB6923138AFD0F00A09F29"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Release"
+		},
+		"E4B69E1C0A3A1BDC003C02F2": {
+			"children": [
+				"E4B69E1D0A3A1BDC003C02F2",
+				"E4B69E1E0A3A1BDC003C02F2",
+				"E4B69E1F0A3A1BDC003C02F2"
+			],
+			"isa": "PBXGroup",
+			"path": "src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1D0A3A1BDC003C02F2": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.cpp",
+			"name": "main.cpp",
+			"path": "src/main.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1E0A3A1BDC003C02F2": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofApp.cpp",
+			"path": "src/ofApp.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1F0A3A1BDC003C02F2": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.c.h",
+			"name": "ofApp.h",
+			"path": "src/ofApp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E200A3A1BDC003C02F2": {
+			"fileRef": "E4B69E1D0A3A1BDC003C02F2",
+			"isa": "PBXBuildFile"
+		},
+		"E4B69E210A3A1BDC003C02F2": {
+			"fileRef": "E4B69E1E0A3A1BDC003C02F2",
+			"isa": "PBXBuildFile"
+		},
+		"E4B6FCAD0C3E899E008CF71C": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.plist.xml",
+			"path": "openFrameworks-Info.plist",
+			"sourceTree": "<group>"
+		},
+		"E4C2427710CC5ABF004149E2": {
+			"buildActionMask": "2147483647",
+			"dstPath": "",
+			"dstSubfolderSpec": "10",
+			"files": [],
+			"isa": "PBXCopyFilesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4EB6923138AFD0F00A09F29": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.xcconfig",
+			"path": "Project.xcconfig",
+			"sourceTree": "<group>"
+		},
+		"E6157863-ED70-415C-A551-FA225CB36213": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "handler_hqnode.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/dataunpacker/unpacker/handler_hqnode.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E931955C-7593-47EA-8F50-E464766FDCF3": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "waiter.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/hal/waiter.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"EA22E55A-7CB3-4CD0-A7DF-1F9F18C2232C": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "assert.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/hal/assert.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"EB8A3A43-7939-4D77-820C-457EE2FCFE21": {
+			"fileRef": "5A07E721-2166-4B26-B4BA-D72E33115C40",
+			"isa": "PBXBuildFile"
+		},
+		"EBBBB725-B0AF-4608-8D0B-B75585EA93B7": {
+			"fileRef": "311A1041-6559-4DA3-97DE-895DB1BD1361",
+			"isa": "PBXBuildFile"
+		},
+		"FB65696B-267B-4F38-9602-1DD19DD2C4BB": {
+			"children": [
+				"51CED03A-7C72-4FB1-BB21-B5E5201F7E34"
+			],
+			"isa": "PBXGroup",
+			"name": "utils",
+			"path": "../../../addons/ofxRPlidar/libs/utils",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"FE2D906B-31E6-40B6-8216-D1444A149C65": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "types.h",
+			"path": "../../../addons/ofxRPlidar/libs/rplidar/src/hal/types.h",
+			"sourceTree": "SOURCE_ROOT"
+		}
+	},
+	"openFrameworksProjectGeneratorVersion": "21",
+	"rootObject": "E4B69B4C0A3A1720003C02F2"
+}
