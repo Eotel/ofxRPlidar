@@ -10,12 +10,17 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+/*
+ * Modified by Eotel on 2024-09-28
+ * - Added support for device types other than A2
+ */
+
 #pragma once
 
 #include <string>
-#include "ofTypes.h"
 #include "ofThread.h"
-#include "rplidar.h" //RPLIDAR standard sdk, all-in-one header
+#include "ofTypes.h"
+#include "rplidar.h" //RPLiDAR standard sdk, all-in-one header
 // __le defined in rplidar sdk but the same name is used in deque(libc++).
 // it's seems not to be used in rplidar library at all so we undef it here.
 #undef __le
@@ -23,48 +28,72 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #include "DoubleBuffer.h"
 #include "ofSerial.h"
 
-namespace rp { namespace standalone { namespace rplidar {
-class RPlidarDriver;
-}}}
-namespace ofx {
-namespace rplidar {
-namespace device {
-class A2 : ofThread
+namespace rp::standalone::rplidar
 {
-public:
-	struct ScannedData {
-		float angle;
-		float distance;
-		unsigned char quality;
-		bool sync;
-	};
-	A2();
-	virtual ~A2();
-	static std::vector<ofSerialDeviceInfo> getDeviceList();
-	bool connect(const std::string &serial_path, int baud_rate=115200);
-	bool reconnect(int baud_rate=115200);
-	bool disconnect();
-	bool isConnected() const;
-	bool start(bool threaded=true);
-	bool stop();
-	void update();
-	bool isFrameNew() const { return is_frame_new_; }
-	std::vector<ScannedData> scan(bool ascend=true);
-	std::vector<ScannedData> getResult();
-	std::string getSerialPath() const { serial_path_; }
-	std::string getSerialNumber() const;
-protected:
-	std::string serial_path_;
-	bool has_new_frame_=false;
-	bool is_frame_new_=false;
-	void threadedFunction();
-	DoubleBuffer<std::vector<ScannedData>> result_;
-	rp::standalone::rplidar::RPlidarDriver *driver_;
-	rplidar_response_device_info_t device_info_;
-	rplidar_response_device_health_t health_info_;
-};
-}
-}
+    class RPlidarDriver;
 }
 
-using ofxRPlidar = ofx::rplidar::device::A2;
+
+namespace ofx::rplidar
+{
+    enum DeviceType
+    {
+        A1,
+        A2M7,
+        A2M8,
+        A2M12,
+        A3,
+        S1,
+        S2,
+        S3,
+        DEFAULT_TYPE = A1
+    };
+
+    namespace device
+    {
+        class GenericDevice final : ofThread
+        {
+        public:
+            struct ScannedData
+            {
+                float angle;
+                float distance;
+                unsigned char quality;
+                bool sync;
+            };
+
+            explicit GenericDevice(DeviceType type = ofx::rplidar::DEFAULT_TYPE);
+            virtual ~GenericDevice();
+            static std::vector<ofSerialDeviceInfo> getDeviceList();
+            bool connect(const std::string& serial_path);
+            bool reconnect();
+            bool disconnect();
+            bool isConnected() const;
+            bool start(bool threaded = true);
+            bool stop();
+            void update();
+            bool isFrameNew() const { return is_frame_new_; }
+            static int getBaudRate(DeviceType type);
+
+            std::vector<sl::LidarScanMode> scanModes;
+            std::vector<ScannedData> scan(bool ascend = true) const;
+            std::vector<ScannedData> getResult();
+            std::string getSerialPath() const { return serial_path_; }
+            std::string getSerialNumber() const;
+
+        protected:
+            std::string serial_path_;
+            int baud_rate_;
+            bool has_new_frame_ = false;
+            bool is_frame_new_ = false;
+            void threadedFunction() override;
+
+            DoubleBuffer<std::vector<ScannedData>> result_;
+            rp::standalone::rplidar::RPlidarDriver* driver_;
+            rplidar_response_device_info_t device_info_{};
+            rplidar_response_device_health_t health_info_{};
+        };
+    }
+}
+
+using ofxRPlidar = ofx::rplidar::device::GenericDevice;
