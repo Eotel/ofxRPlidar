@@ -199,11 +199,14 @@ void device::GenericDevice::threadedFunction()
 {
     while (isThreadRunning())
     {
-        result_.back() = scan(true);
-        lock();
-        has_new_frame_ = true;
-        result_.swap();
-        unlock();
+        auto now = std::chrono::steady_clock::now();
+        if (std::chrono::duration_cast<std::chrono::milliseconds>(now - last_scan_time_).count() >= 66)
+        {
+            // ~15Hz
+            result_.back() = scan();
+            result_.swap();
+            has_new_frame_ = true;
+        }
         ofSleepMillis(1);
         if (!isConnected())
         {
@@ -214,20 +217,16 @@ void device::GenericDevice::threadedFunction()
 
 void device::GenericDevice::update()
 {
-    bool new_frame = false;
     if (isThreadRunning())
     {
-        lock();
-        new_frame = has_new_frame_;
-        has_new_frame_ = false;
-        unlock();
+        is_frame_new_ = has_new_frame_.exchange(false);
     }
     else
     {
-        result_.front() = scan(true);
-        new_frame = true;
+        result_.back() = scan();
+        result_.swap();
+        is_frame_new_ = true;
     }
-    is_frame_new_ = new_frame;
 }
 
 int device::GenericDevice::getBaudRate(const DeviceType type)
@@ -250,16 +249,14 @@ int device::GenericDevice::getBaudRate(const DeviceType type)
     }
 }
 
-vector<device::GenericDevice::ScannedData> device::GenericDevice::getResult()
+
+std::vector<device::GenericDevice::ScannedData> device::GenericDevice::getResult()
 {
     if (isThreadRunning())
     {
-        lock();
-        vector<device::GenericDevice::ScannedData> ret = result_.front();
-        unlock();
-        return ret;
+        return result_.front();
     }
-    return result_.front();
+    return scan();
 }
 
 string device::GenericDevice::getSerialNumber() const
@@ -272,32 +269,47 @@ string device::GenericDevice::getSerialNumber() const
     return ret;
 }
 
-vector<device::GenericDevice::ScannedData> device::GenericDevice::scan(const bool ascend) const
+std::vector<device::GenericDevice::ScannedData> device::GenericDevice::scan(const bool ascend)
 {
-    vector<ScannedData> ret;
+    std::vector<ScannedData> ret;
+    is_scanning_ = true;
+    auto start = std::chrono::steady_clock::now();
 
     rplidar_response_measurement_node_hq_t nodes[8192];
     size_t count = sizeof(nodes) / sizeof(rplidar_response_measurement_node_hq_t);
 
-    u_result ans = driver_->grabScanDataHq(nodes, count);
-    if (IS_OK(ans) || ans == RESULT_OPERATION_TIMEOUT)
+    while (is_scanning_ && std::chrono::duration_cast<std::chrono::milliseconds>(
+        std::chrono::steady_clock::now() - start).count() < 1000)
     {
-        if (ascend) driver_->ascendScanData(nodes, count);
-
-        ret.resize(count);
-        for (int i = 0; i < count; ++i)
+        u_result ans = driver_->grabScanDataHq(nodes, count);
+        if (IS_OK(ans))
         {
-            auto& [angle, distance, quality, sync] = ret[i];
+            if (ascend) driver_->ascendScanData(nodes, count);
 
-            sync = nodes[i].flag;
-            angle = static_cast<float>(nodes[i].angle_z_q14) * 90.f / (1 << 14); // convert to degree
-            distance = static_cast<float>(nodes[i].dist_mm_q2) / (1 << 2); // もし m にしたいなら / 1000.f / (1 << 2);
-            quality = nodes[i].quality;
+            ret.resize(count);
+            for (int i = 0; i < count; ++i)
+            {
+                auto& [angle, distance, quality, sync] = ret[i];
+                sync = nodes[i].flag;
+                angle = static_cast<float>(nodes[i].angle_z_q14) * 90.f / (1 << 14);
+                distance = static_cast<float>(nodes[i].dist_mm_q2) / (1 << 2);
+                quality = nodes[i].quality;
+            }
+            is_scanning_ = false;
+            last_scan_time_ = std::chrono::steady_clock::now();
+            return ret;
+        }
+        else if (ans != RESULT_OPERATION_TIMEOUT)
+        {
+            ofLogWarning("RPLIDAR") << "Error occurred during scan, code: " << ans;
+            break;
         }
     }
-    else
+
+    is_scanning_ = false;
+    if (ret.empty())
     {
-        ofLogError("RPLIDAR", "error code: %x", ans);
+        ofLogError("RPLIDAR") << "Failed to get scan data within timeout period";
     }
     return ret;
 }

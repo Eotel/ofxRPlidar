@@ -76,7 +76,7 @@ namespace ofx::rplidar
             static int getBaudRate(DeviceType type);
 
             std::vector<sl::LidarScanMode> scanModes;
-            std::vector<ScannedData> scan(bool ascend = true) const;
+            std::vector<ScannedData> scan(bool ascend = true);
             std::vector<ScannedData> getResult();
             std::string getSerialPath() const { return serial_path_; }
             std::string getSerialNumber() const;
@@ -84,8 +84,10 @@ namespace ofx::rplidar
         protected:
             std::string serial_path_;
             int baud_rate_;
-            bool has_new_frame_ = false;
-            bool is_frame_new_ = false;
+            std::atomic<bool> has_new_frame_ = false;
+            std::atomic<bool> is_frame_new_ = false;
+            std::atomic<bool> is_scanning_ = false;
+            std::chrono::steady_clock::time_point last_scan_time_;
             void threadedFunction() override;
 
             DoubleBuffer<std::vector<ScannedData>> result_;
