@@ -22,12 +22,12 @@ linuxarmv6l:
 	ADDON_SOURCES_EXCLUDE += libs/rplidar/src/arch/macOS%
 
 linuxarmv7l:
-	ADDON_SOURCES_EXCLUDE = libs/rplidar/src/arch/win32
-	ADDON_SOURCES_EXCLUDE += libs/rplidar/src/arch/macOS
+	ADDON_SOURCES_EXCLUDE = libs/rplidar/src/arch/win32%
+	ADDON_SOURCES_EXCLUDE += libs/rplidar/src/arch/macOS%
 
 linuxaarch64:
-	ADDON_SOURCES_EXCLUDE = libs/rplidar/src/arch/win32
-	ADDON_SOURCES_EXCLUDE += libs/rplidar/src/arch/macOS
+	ADDON_SOURCES_EXCLUDE = libs/rplidar/src/arch/win32%
+	ADDON_SOURCES_EXCLUDE += libs/rplidar/src/arch/macOS%
 
 osx:
 	ADDON_SOURCES_EXCLUDE = libs/rplidar/src/arch/win32%
